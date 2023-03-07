@@ -1,4 +1,4 @@
-# TD
+# TD : Git branches
 
 Exercice 1 :
 

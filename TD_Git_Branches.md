@@ -27,7 +27,8 @@ git commit -m "Done"
 ```
 4. Push your branch to the remote repository
 ```
-
+git push
+#Then enter access token
 ```
 
 ## Exercice 3 :

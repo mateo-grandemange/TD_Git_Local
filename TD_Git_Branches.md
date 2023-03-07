@@ -35,7 +35,7 @@ git push origin Matthieu
 
 1. Merge your branch into the ’master’ branch.
 ```
-git checkout -b master  #To switch to the master branch
+git checkout master  #To switch to the master branch
 git merge Matthieu
 ```
 2. Push your changes in the ’master’ branch to the remote repository.
@@ -66,18 +66,19 @@ git commit -m "Update de Matthieu on README.md"
 4. Pull latest status from the remote repository ’master’ branch into your
 local ’master’ branch. 
 ```
-
+git checkout master
+git pull origin master
 ```
 5. Merge your branch into the local ’master’ branch. 
 ```
-
+git merge Matthieu
 ```
 6. If there are conflicts, we want the paragraph to appear in alphabetical
 order in the final README.md file.
 ```
-
+sort README.md > README_sorted.md
 ```
 7. Push your changes in the ’master’ branch to the remote repository.
 ```
-
+git push origin master
 ```

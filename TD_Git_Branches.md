@@ -27,7 +27,7 @@ git commit -m "Done"
 ```
 4. Push your branch to the remote repository
 ```
-git push
+git push origin Matthieu
 #Then enter access token
 ```
 
@@ -35,11 +35,12 @@ git push
 
 1. Merge your branch into the ’master’ branch.
 ```
-
+git checkout -b master  #To switch to the master branch
+git merge Matthieu
 ```
 2. Push your changes in the ’master’ branch to the remote repository.
 ```
-
+git push origin master
 ```
 
 ## Exercice 4 :
@@ -47,7 +48,7 @@ git push
 1. Switch back to your own branch (not including the latest changes from
 the master branch).
 ```
-
+git checkout Matthieu
 ```
 2. Edit the lines 2 to 6 of the README.md file with a text you like (a
 poem, a quote, some clever code...). It can be any readable text, it may
@@ -55,11 +56,12 @@ be incomplete, it must just take about 5 lines and be different from your
 teammates. It must start on line 2 to trigger conflicts between team
 members.
 ```
-
+vim README.md    #To modify README.md
 ```
 3. Commit this change.
 ```
-
+git add README.md
+git commit -m "Update de Matthieu on README.md"
 ```
 4. Pull latest status from the remote repository ’master’ branch into your
 local ’master’ branch. 

@@ -108,3 +108,15 @@ git merge master
 git add README.md
 git commit -am "New changes"
 ```
+
+## Exercice 6 :
+
+1. Delete your branch on local repository.
+```
+git branch -d Matthieu
+```
+
+2. Delete your branch on distant repository.
+```
+git push GIT-BRANCHES --delete Matthieu
+```

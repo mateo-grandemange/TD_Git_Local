@@ -42,6 +42,10 @@ git merge Matthieu
 ```
 git push origin master
 ```
+Check in the web UI you see your branch
+```
+git log --graph --oneline
+```
 
 ## Exercice 4 :
 

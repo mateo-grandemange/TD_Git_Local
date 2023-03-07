@@ -17,8 +17,8 @@ git branch antoine_matthieu_mateo
 
 2. Create a new text file named after you (with the content you want).
 ```
-vim antoine_matthieu_mateo.txt
-echo "Bonjour"
+echo "Bonjour" > antoine_matthieu_mateo.txt
+
 ```
 3. Commit this new file.
 ```

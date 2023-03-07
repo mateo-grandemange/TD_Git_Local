@@ -2,7 +2,4 @@
 
 Exercice 1 :
 
-
-efdfbrervdf
-
-test antoine
+3) 

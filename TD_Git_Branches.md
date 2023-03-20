@@ -87,7 +87,7 @@ sort README.md > README_sorted.md
 git push origin master
 ```
 
-## Exercise 5: Take latest changes from master in local branch
+## Exercise 5: 
 
 1. Pull the latest changes in the ’master’ branch, check the README.md
 is up-to-date (contains all the paragraphs and the new line).
@@ -121,4 +121,30 @@ git branch -d Matthieu
 git push GIT-BRANCHES --delete Matthieu
 ```
 
-3. m
+## Exercice 7 :
+
+1. Pull the latest changes in the ’master’ branch.
+```
+
+```
+2. Create a new local branch named after you and switch to it.
+```
+
+```
+3. Then with a separate commit for each change 
+```
+
+```
+4. Use interactive rebase to have a single commit with message "Explain git
+interactive rebase.".
+```
+
+```
+5. Push your branch on the remote repository.
+```
+
+```
+
+## Exercice 8 :
+
+Done on Github

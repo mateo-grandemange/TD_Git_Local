@@ -125,24 +125,81 @@ git push GIT-BRANCHES --delete Matthieu
 
 1. Pull the latest changes in the ’master’ branch.
 ```
-
+git checkout master
+git pull origin master
 ```
 2. Create a new local branch named after you and switch to it.
 ```
-
+git checkout -b Matthieu
 ```
 3. Then with a separate commit for each change 
+(a) Clear the whole file, removing all text.
 ```
+echo "" > README.md
+git add README.md
+git commit -m "Clear file"
+git push origin Matthieu
+```
+(b) Add a title line "Git interactive rebase".
+```
+echo "Git interactive rebase" >> README.md
+git add README.md
+git commit -m "Add title"
+git push origin Matthieu
 
+```
+(c) Copy the first paragraph from https ://git-scm.com/book/en/v2/Git-
+Tools-Rewriting-History.
+```
+curl https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History | grep -oP "(?<=div class="\paragraph"\>).*(?=with others)" >> README.md
+git add README.md
+git commit -m "Copy the first paragraph"
+git push origin Matthieu
+```
+(d) Add the second paragraph from the same page.
+```
+curl https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History | grep -oP "(?<=Changing your most).*(?=modifying files.)" >> README.md
+git add README.md
+git commit -m "Add the second paragraph"
+git push origin Matthieu
+```
+(e) Add the first and second paragraphs from the "Changing Multiple
+Commit Messages" section in the same page.
+```
+curl https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History | grep -oP "(?<=Changing your most).*(?=new last commit.)" >> README.md
+git add README.md
+git commit -m "Add the first and second paragraphs from the 'Changing Multiple Commit Messages' section in the same page."
+git push origin Matthieu
+```
+(f) Remove the second paragraph from your file.
+```
+sed -i '16d' README.md
+git add README.md
+git commit -m "Remove the second paragraph "
+git push origin Matthieu
+```
+(g) Add the missing title "Changing Multiple Commit Messages" 
+```
+sed -i '4i Changing Multiple Commit Messages' README.md
+git add README.md
+git commit -m "Add missing title"
+git push origin Matthieu
+```
+(h) Add a final line with your name or alias.
+```
+echo "Matthieu JULIEN" >> README.md
+git add README.md
+git commit -m "Add name"
+git push origin Matthieu
 ```
 4. Use interactive rebase to have a single commit with message "Explain git
 interactive rebase.".
 ```
-
+git rebase -i HEAD~3
 ```
 5. Push your branch on the remote repository.
 ```
-
+git push origin Matthieu
 ```
 
 ## Exercice 8 :
